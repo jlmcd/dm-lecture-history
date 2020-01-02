@@ -1,0 +1,62 @@
+@import url('Hey ttps://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  /* 
+  ! pixels are great, but "rem"s and "em"s are amazing
+  ! for scalability 
+  */
+  /* margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto; */
+  /* margin: 1rem auto 1rem auto; */
+  width: 900px;
+  border: 2px solid black;
+  padding: .5rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+article {
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+  margin: 1rem 0;
+  clear: right;
+}
+#steinway-article {
+  height: 380px;
+}
+img {
+  width: 30%;
+  height: auto;
+  float: right;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Permanent Marker', cursive;
+}
+h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+h3 {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}

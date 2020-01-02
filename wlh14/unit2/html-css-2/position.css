@@ -1,0 +1,80 @@
+html {
+  background: lightgray;
+}
+
+body {
+  height: 200vh;
+}
+
+.outer-box {
+  width: 500px;
+  height: 500px;
+  background: tomato;
+  position: relative;
+}
+
+.relative-box {
+  width: 30%;
+  height: 30%;
+  background: blueviolet;
+  /* position: static; the default */
+  position: relative;
+  left: 50px;
+  z-index: 0;
+}
+
+.absolute-box {
+  width: 150px;
+  height: 150px;
+  background: goldenrod;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fixed-box {
+  width: 600px;
+  height: 100px;
+  background: seagreen;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.sticky-box {
+  height: 80px;
+  width: 100%;
+  background: gray;
+  position: sticky;
+  top: 0;
+}
+
+.display-box {
+  width: 50%;
+  height: 500px;
+  background: firebrick;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  display: block;
+}
+.inline {
+  height: 100px;
+  width: 100px;
+  /* ! Inline elements can't use height/width! */
+  /* ! Inline elements only take up the space of 
+     ! their content */
+  background: violet;
+  display: inline;
+  margin: 50px;
+  padding: 1rem;
+}
+.inline-block {
+  height: 100px;
+  width: 100px;
+  background: teal;
+  display: inline-block;
+}

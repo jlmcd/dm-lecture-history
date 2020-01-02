@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(40deg, #e3ffe7, #d9e7ff);
+  margin: 0;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.test-button {
+  background: #fffffa;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: .5rem 2rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.blue {
+  color: #096cff;
+  background: #afafaf;
+  border-color: #096cff;
+}
+
+.key {
+  color: #333333;
+  background: #096cff;
+  border-color: #333333;
+}
+
+input {
+  width: 400px;
+}

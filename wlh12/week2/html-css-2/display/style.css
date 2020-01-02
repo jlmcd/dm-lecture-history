@@ -1,0 +1,18 @@
+h1 {
+  background: hotpink;
+  display: block;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: rosybrown;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+span {
+  display: inline;
+  background: lightyellow;
+}

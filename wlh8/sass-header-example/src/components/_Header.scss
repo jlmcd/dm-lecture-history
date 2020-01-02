@@ -1,0 +1,145 @@
+$black: rgb(15, 15, 15);
+$white: #eee;
+$font: 'Inconsolata', monospace;
+$colorList: rgb(45, 255, 241), rgb(45, 255, 181), rgb(44, 255, 125), rgb(121, 255, 44), rgb(225, 255, 45), rgb(241, 255, 45), rgb(255, 234, 45), rgb(255, 223, 45);
+
+@mixin transition($property, $time) {
+  -webkit-transition: $property $time cubic-bezier(0.59, 0.28, 0.44, 0.91);
+  -moz-transition: $property $time cubic-bezier(0.59, 0.28, 0.44, 0.91);
+  -o-transition: $property $time cubic-bezier(0.59, 0.28, 0.44, 0.91);
+  transition: $property $time cubic-bezier(0.59, 0.28, 0.44, 0.91);
+}
+
+%placeholder-class {
+  float: right;
+}
+
+header {
+  height: 100vh;
+  width: 100px / 600px * 100%;
+  margin: 0 0 0 auto;
+  font-family: $font;
+  @extend %placeholder-class;
+  > .logo {
+    font-size: 3rem;
+    h1 {
+      padding: 0;
+      margin: 0;
+      max-height: 6rem;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background: $black;
+    height: calc(100% - 6rem);
+    padding: 1rem;
+  }
+  li {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    @include transition(color, .1s);
+    &:hover {
+      @for $i from 1 through 8 {
+        &:nth-of-type(#{$i}) {
+          color: nth($colorList, $i);
+        }
+      }
+    }
+  }
+}
+
+
+// header nav:nth-of-type(1) {
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// color variables $
+
+// font variables
+
+// nesting to style the header
+
+  // ' '
+  // >
+  // &:
+
+// @extend to inherit logo styles
+
+// @mixin for hover transition
+@mixin grid {
+  display: -ms-grid;
+  display: grid;
+}
+@mixin gridColumns($value) {
+  -ms-grid-column: $value;
+  grid-template-columns: $value;
+}
+
+
+// for loop to style each li color from a list
+
+// @for $i from 1 through 8 {
+//   &:nth-of-type(#{$i}) {
+//     color: nth($colorList, $i);
+//   }
+// }
+
+// $font: 'Inconsolata', monospace;
+// $black: rgb(15, 15, 15);
+// $white: #eee;
+// $gradient: linear-gradient(200deg, rgba(44, 255, 241, .5), rgba(223, 255, 45, .5));
+// $colorList: rgb(45, 255, 241), rgb(45, 255, 181), rgb(44, 255, 125), rgb(121, 255, 44), rgb(225, 255, 45), rgb(241, 255, 45), rgb(255, 234, 45), rgb(255, 223, 45);
+// $blueHighlight: rgb(44, 255, 241);
+
+
+
+
+
+
+// $font: 'Inconsolata', monospace;
+// $black: rgb(15, 15, 15);
+// $white: #eee;
+// $gradient: linear-gradient(200deg, rgba(44, 255, 241, .5), rgba(223, 255, 45, .5));
+// $colorList: rgb(45, 255, 241), rgb(45, 255, 181), rgb(44, 255, 125), rgb(121, 255, 44), rgb(225, 255, 45), rgb(241, 255, 45), rgb(255, 234, 45), rgb(255, 223, 45);
+// $blueHighlight: rgb(44, 255, 241);
+

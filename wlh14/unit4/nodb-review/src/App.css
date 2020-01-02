@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  background: #fffefe;
+}
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.header .chopin, .header .liszt {
+  height: 80px;
+  width: 80px;
+  box-shadow: 0 0 12px 16px #fffefe inset;
+  background-size: cover;
+  background-position: top;
+}
+.header .chopin {
+  background-image: url('https://www.kaufmanmusiccenter.org/images/uploads/events/_medium/1380x920_Chopin.jpg');
+}
+.header .liszt {
+  background-image: url('https://www.onthisday.com/images/people/franz-liszt-medium.jpg');
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.form {
+  min-width: 400px;
+  height: 300px;
+  box-shadow: 0 0 15px #000000af;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.form input {
+  width: 80%;
+  font-size: 1rem;
+  line-height: 2rem;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+.form button {
+  font-size: 1rem;
+  border-radius: 5px;
+  background: radial-gradient(#9ada9a98, #9ada9a);
+  color: #333;
+  margin: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px #000000af;
+  border-radius: 7px;
+  min-width: 300px;
+  align-items: center;
+  padding: 0 1rem;
+}
+.list-item {
+  height: 65px;
+  border-bottom: 1px solid #202020;
+  width: 100%;
+}
+.list-item:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.list-item > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.list-item h2 {
+  min-width: 2rem;
+}
+.list-item h3 {
+  flex: 1;
+}
+.input[type="checkbox"] {
+  cursor: pointer;
+}

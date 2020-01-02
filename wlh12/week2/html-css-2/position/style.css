@@ -1,0 +1,39 @@
+body {
+  height: 200vh;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: #bada55;
+  position: sticky;
+  top: 80px;
+  left: 600px;
+  overflow-y: scroll;
+}
+
+.x {
+  /* background-color: blue; */
+  font-size: 2rem;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.box2 {
+  height: 70px;
+  width: 300px;
+  background-color: tomato;
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+}
+
+nav {
+  text-align: center;
+  background-color: lightsalmon;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+  z-index: -1;
+}

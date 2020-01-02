@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+body, html {
+  background: #effeff;
+}
+
+.App {
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Bangers', cursive;
+  color: #2b3d41;
+}
+
+.pokemon-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.finder {
+  display: flex;
+  justify-content: center;
+}
+
+.grass {
+  display: flex;
+  flex-direction: column;
+}
+h4 {
+  text-transform: capitalize;
+}
+.grass > img {
+  cursor: pointer;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Header Clone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="https://kit.fontawesome.com/274a7e25f8.js" crossorigin="anonymous"></script>
+    <script async src="./script.js"></script>
+  </head>
+  <body onscroll={removeMenu()}>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Start Bootstrap</h1>
+        </div>
+        <nav>
+          <li class="selected">Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+          <i 
+            onclick="clickHamburger()"
+            class="fas fa-bars fa-2x"
+          ></i>
+        </nav>
+      </div>
+      <div id="dropdown" class="dropdown hide">
+        <div class="container">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </div>
+      </div>
+    </header>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio neque facere magnam. Blanditiis nulla aspernatur molestiae velit maxime rem maiores ratione non. Dolor minus nostrum quo illo veritatis cupiditate quae.</p>
+  </body>
+</html>

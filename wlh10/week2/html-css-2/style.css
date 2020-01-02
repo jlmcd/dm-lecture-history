@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+.outer {
+  height: 50vh;
+  width: 50vw;
+  background: blue;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.inner {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner-inner {
+  min-height: 50px;
+  min-width: 50px;
+  background: yellow;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.other-div {
+  height: 200vh;
+  width: 80vw;
+  background: green;
+  z-index: -1;
+  position: relative;
+}
+
+.navbar {
+  min-height: 60px;
+  height: 10vh;
+  background: purple;
+  position: sticky;
+  top: 0;
+  overflow: auto;
+  color: white;
+  box-shadow:  5px 5px 10px black;
+}
+
+
+

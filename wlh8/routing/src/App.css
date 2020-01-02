@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  margin: 0 3rem;
+}
+h4 {
+  cursor: pointer;
+}
+h4:hover {
+  color: blue;
+}

@@ -1,0 +1,92 @@
+.square {
+  height: 100px;
+  width: 100px;
+  background: tomato;
+  margin: 3rem;
+  /* transition: 3s cubic-bezier(.34,-0.03,.22,1.43); */
+  /* animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  animation: spin 3s infinite linear;
+}
+
+/* .square:hover {
+  background: orchid;
+  width: 1000px;
+} */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    background: orange;
+  }
+  20% {
+    background: yellow;
+    transform: rotate(0deg);
+  }
+  30% {
+    background: green;
+  }
+  40% {
+    background: blue;
+  }
+  50% {
+    background: indigo;
+  }
+  60% {
+    background: violet;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* * HEART ANIMATION * */
+
+.heart-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.heart {
+  background: #ac0000;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  transform: rotate(45deg);
+  animation: heartbeat .7s infinite;
+}
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #ac0000;
+  border-radius: 50%;
+}
+.heart::after {
+  bottom: 50px;
+}
+.heart::before {
+  right: 50px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  20% {
+    transform: scale(1.25) rotate(45deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(45deg);
+  }
+  40% {
+    transform: scale(1.5) rotate(45deg);
+  }
+}

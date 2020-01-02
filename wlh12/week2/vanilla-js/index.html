@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript in the DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Javascript in the DOM</h1>
+    <div id="box" class="red big"></div>
+    <div onclick="consoleLogTheInput()">
+      <input type="text" onclick="typeThings()" />
+    </div>
+    <button onclick="consoleLogTheInput()">Click me to console log</button>
+
+    <hr>
+    <div id="main">
+      <p class="old-paragraph">
+        I'm an old paragraph
+      </p>
+    </div>
+
+    <div class="image-container">
+
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

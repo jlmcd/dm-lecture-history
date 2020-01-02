@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button:active {
+  background: linear-gradient(to bottom, #78787877, #78787877 65%, #89898933 100%) !important;
+}
+h1 {
+  text-align: center;
+}
+div {
+  text-align: center;
+}

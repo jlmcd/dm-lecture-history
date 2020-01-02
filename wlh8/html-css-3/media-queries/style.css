@@ -1,0 +1,21 @@
+.nav {
+  background-color: #bada55;
+  height: 60px;
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  /* Styles to be applied */
+  .nav {
+    background-color: lavender;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .square {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+  }
+}

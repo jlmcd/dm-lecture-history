@@ -1,0 +1,87 @@
+.square {
+  height: 100px;
+  width: 100px;
+  background: violet;
+  margin: 5rem;
+  /* transition: background 3s, cubic-bezier(.39,.5,.6,1.44) width 3s; */
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* .square:hover {
+  background: blue;
+  width: 1000px;
+} */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    background: orange;
+  }
+  20% {
+    background: yellow;
+    transform: rotate(0deg);
+  }
+  30% {
+    background: green;
+  }
+  40% {
+    background: blue;
+  }
+  50% {
+    background: indigo;
+  }
+  60% {
+    background: violet;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.heart-container {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.heart {
+  background: #ac0000;
+  height: 100px;
+  width: 100px;
+  transform: rotate(45deg);
+  animation: heartbeat .7s infinite;
+}
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  background-color: #ac0000;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.heart::before {
+  top: -50px;
+}
+.heart::after {
+  right: 50px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  20% {
+    transform: scale(1.25) rotate(45deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(45deg);
+  }
+  40% {
+    transform: scale(1.5) rotate(45deg);
+  }
+}

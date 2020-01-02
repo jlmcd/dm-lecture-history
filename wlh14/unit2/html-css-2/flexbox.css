@@ -1,0 +1,29 @@
+body {
+  background: lemonchiffon;
+  margin: 0;
+}
+
+.child {
+  height: 100px;
+  width: 100px;
+  background: mediumseagreen;
+  box-shadow: 5px 10px 20px black;
+  /* display: inline-block; */
+}
+
+.flexbox-parent {
+  display: flex;
+  border: 2px solid tomato;
+  min-height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* overflow: auto; */
+}
+
+.main {
+  height: 80vh;
+  width: 80vw;
+  background: blue;
+}

@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  height: 100vh;
+  background: blue;
+  width: 25vw;
+}
+h1 {
+  font-size: 6vw;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}

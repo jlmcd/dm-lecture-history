@@ -1,0 +1,14 @@
+#box {
+  width: 100px;
+  height: 100px;
+  margin: 200px;
+}
+.red {
+  background-color: red;
+}
+.yellow { 
+  background-color: yellow;
+}
+.big {
+  transform: scale(2);
+}
